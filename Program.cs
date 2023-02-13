@@ -88,7 +88,7 @@ string output = reminder == 0 ? "Evenly" : "not Evenly";
 
 Console.WriteLine("Number is: " + output + "!!!");
 
-*/
+
 
  //task5  Показать все четные числа от 1 до N
 
@@ -103,4 +103,11 @@ if (enteredNumber > 1)
     evenNumber +=2;
   }
 }
+
+*/
+
+
+
+//task6 Показать последнюю цифру трехзначного числа
+
 
