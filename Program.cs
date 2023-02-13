@@ -104,7 +104,7 @@ if (enteredNumber > 1)
   }
 }
 
-*/
+
 
 
 
@@ -123,5 +123,23 @@ else
  Console.WriteLine("Это не трехзначное число!!!!");
 }
 
+ */
+
+
+
+ //task7 Показать вторую цифру трехзначного числа
+
  
 
+Console.WriteLine("Введите трехзначное чило: ");
+string Z = Console.ReadLine();
+if (Z.Length == 3)
+
+{
+string lastDig = Z.Substring(1,1);
+ Console.WriteLine("Вторая цира числа: " + lastDig);
+}
+else
+{
+ Console.WriteLine("Это не трехзначное число!!!!");
+}
