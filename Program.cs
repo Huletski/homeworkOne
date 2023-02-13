@@ -110,4 +110,18 @@ if (enteredNumber > 1)
 
 //task6 Показать последнюю цифру трехзначного числа
 
+int N = 0;
+Console.WriteLine("Введите трехзначное чило: ");
+N = int.Parse(Console.ReadLine());
+if (N >= 100 && N <= 999)
+{
+ int lastDigit = N%10;
+ Console.WriteLine("Последняя цира числа: " + lastDigit);
+}
+else
+{
+ Console.WriteLine("Это не трехзначное число!!!!");
+}
+
+ 
 
