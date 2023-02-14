@@ -170,8 +170,11 @@ Console.WriteLine ("Наибольшая цифра из этого числа: 
 */
 
 
+
+
 //task9 Удалить вторую цифру трёхзначного числа
 
+/*
 
 Console.WriteLine("Введите трехзначное чило: ");
 string enteredNumb = Console.ReadLine();
@@ -184,4 +187,45 @@ string deletSecondNumber = enteredNumb.Remove(1,1);
 else
 {
  Console.WriteLine("Это не трехзначное число!!!!");
+}
+
+*/
+
+
+
+
+
+//task10 Выяснить, кратно ли число заданному, если нет, вывести остаток
+
+/*
+
+Console.WriteLine ("Введите два числа: ");
+var numOne = int.Parse(Console.ReadLine());
+var numTwo = int.Parse(Console.ReadLine());
+
+if (numOne%numTwo == 0)
+{
+Console.WriteLine ("Первое число кратно второму.");
+}
+else
+{
+Console.WriteLine ("Первое число не кратно второму. Остаток: " + numOne % numTwo);
+}
+
+*/
+
+
+
+//task11 Найти третью цифру числа или сообщить, что её нет
+
+Console.WriteLine ("Введите число: ");
+string findNumberThtree = Console.ReadLine();
+
+if (findNumberThtree.Length > 2)
+{
+Console.WriteLine ("Третья цифра числа: "+ findNumberThtree.Substring(2,1));
+}
+else
+{
+Console.WriteLine ("В этом числе менее 3х цифр");
 }
