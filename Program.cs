@@ -129,7 +129,7 @@ else
 
  //task7 Показать вторую цифру трехзначного числа
 
- 
+/* 
 
 Console.WriteLine("Введите трехзначное чило: ");
 string Z = Console.ReadLine();
@@ -138,6 +138,48 @@ if (Z.Length == 3)
 {
 string lastDig = Z.Substring(1,1);
  Console.WriteLine("Вторая цира числа: " + lastDig);
+}
+else
+{
+ Console.WriteLine("Это не трехзначное число!!!!");
+}
+
+*/
+
+
+
+
+//task8 Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
+
+/*
+string num = new Random().Next(10, 99).ToString();
+
+string maxNumb = null;
+
+if (Convert.ToInt32(num.Substring(0,1)) > Convert.ToInt32(num.Substring(1,1)))
+{
+maxNumb = num.Substring(0,1);
+}
+else
+{
+maxNumb = num.Substring(1,1);
+}
+Console.WriteLine ("Рандомное число: " + num);
+Console.WriteLine ("Наибольшая цифра из этого числа: " + maxNumb);
+
+*/
+
+
+//task9 Удалить вторую цифру трёхзначного числа
+
+
+Console.WriteLine("Введите трехзначное чило: ");
+string enteredNumb = Console.ReadLine();
+if (enteredNumb.Length == 3)
+
+{
+string deletSecondNumber = enteredNumb.Remove(1,1);
+ Console.WriteLine("Result of deleting 2 number: " + deletSecondNumber);
 }
 else
 {
